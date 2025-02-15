@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color: brown;
+            background-image: url(image\ copy\ 3.png); 
+            background-size: cover;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box{
+            width:60%;
+            height:400px;
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        i{
+            color:rgba(0, 0, 0, 0.623);
+            font-size: 15px;
+            
+        }
+        .inpgrp{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            width:80%;
+            border-radius: 25px;
+            gap: 10px;
+           margin: 30px;
+
+
+        }
+        .text{
+            font-size: 15px;
+            border: none;
+            outline: none;
+            padding:10px;
+            width: 500px;
+            
+
+        }
+        .fav-card{
+           width: 120px;
+           height: 120px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+           cursor: pointer;
+           border-radius: 5px;
+           
+
+        }
+        .fav-card:hover{
+            background-color: rgba(255, 255, 255, 0.281);
+           .dots{
+            opacity: 1;
+           }
+        }
+        .circle{
+            width:50%;
+            height:50%;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           margin-bottom: 5px;
+            
+             
+
+        }
+        .insta{
+            width: 100%;
+            border-radius: 50%;
+      }
+      .meet{
+        width:80%;
+        border-radius: 50%;
+
+      }
+      
+      
+        .favlist{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            margin-top:5px;
+            gap: 10px;
+            
+
+        }
+        .pa{
+            color: white;
+        }
+        .dots{
+            font-size: 20px;
+            position: relative;
+            left: 50px;
+            color: white;
+            opacity: 0;
+            transition: 0.4s all ease;
+        }
+        .top-right{
+            width:200px;
+            height: 50px;
+            color:  white;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+
+
+        }
+        .grid{
+            width:8px;
+            color:  white;
+            font-size: 20px;
+    }
+    .dots1{
+        display: flex;
+        
+        
+
+        }
+        .doll{
+            width: 30px;
+            height: 30px;
+            
+            border-radius: 50%;
+            
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="google.png" alt="" width="40%">
+            <div class="inpgrp">
+            <i class="fa-solid fa-magnifying-glass"></i>
+                 <form action="https://google.com/search">
+                    <input type="text" class="text" placeholder="Search Google or type a URL" name="q">
+                 </form>
+                 <i class="fa-solid fa-microphone"></i>
+                 <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="favlist">
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">
+                      <img src="facebook.png" class="insta" alt="">
+                    </div>
+                
+                <p class="pa">Facebook</p>
+            </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle"> 
+                        <img src="insta.png" class="insta" alt=""> 
+                    </div>
+                 <p class="pa">Instagram</p>
+                
+            </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle">  
+                        <img src="flip.png" class="insta" alt="">
+                    </div>
+                 <p class="pa">FlipKart</p>
+                
+            </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle"> 
+                        <img src="image copy 2.png" class="insta" alt=""> 
+                    </div>
+                 <p class="pa">Zoom</p>
+                
+            </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle"> 
+                        <img src="what.png" class="insta" alt=""> 
+                    </div>
+                 <p class="pa">WhatsApp</p>
+                
+            </div>
+                <div class="fav-card">
+                    <i class="fa-solid fa-ellipsis-vertical dots"></i>
+                    <div class="circle"> 
+                        <img src="meet.png" class="meet" alt=""> 
+                    </div>
+                 <p class="pa">meet</p>    
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="top-right">
+        <p>Gmail</p>
+        <p>Images</p>
+        <div class="dots1">
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+        <i class="fa-solid fa-ellipsis-vertical grid"></i>
+    </div>
+        <img src="doll.png" class="doll">
+        </div>
+    </div>
+</body>
+</html>
